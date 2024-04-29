@@ -35,9 +35,9 @@ func generateUser() types.User {
 	username := generateUsername()
 	var online bool
 	if rand.Intn(2) == 0 {
-		online = false
-	} else {
 		online = true
+	} else {
+		online = false
 	}
 	user := types.User{
 		User_id:  int64(user_id),
