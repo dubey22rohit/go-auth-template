@@ -31,7 +31,7 @@ func generateUsername() string {
 }
 
 func generateUser() types.User {
-	user_id := rand.Intn(99999)
+	user_id := rand.Intn(999999)
 	username := generateUsername()
 	var online bool
 	if rand.Intn(2) == 0 {
